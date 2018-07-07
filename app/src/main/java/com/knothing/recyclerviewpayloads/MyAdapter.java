@@ -46,8 +46,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         if(payloads.isEmpty()){
             onBindViewHolder(holder,position);
         }else {//是局部刷新
-            holder.mTv.setText(Integer.toString(i++));
-//            holder.mTv.setText(mData.get(position));
+//            holder.mTv.setText(Integer.toString(i++));
+            holder.mTv.setText(mData.get(position));
         }
 //        super.onBindViewHolder(holder, position, payloads);
     }
