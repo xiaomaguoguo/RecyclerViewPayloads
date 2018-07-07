@@ -1,6 +1,5 @@
 package com.knothing.recyclerviewpayloads
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -31,8 +30,9 @@ class ScrollingActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
 
-        startActivity(Intent(this@ScrollingActivity,RecyclerViewActivity::class.java))
+//        startActivity(Intent(this@ScrollingActivity,RecyclerViewActivity::class.java))
 
+        toolbar_layout.title = "KNohting"
         return true
 
     }
